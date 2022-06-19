@@ -1,0 +1,26 @@
+li {
+    text-decoration: none !important;
+}
+ul {
+  list-style-type: none;
+}
+td{
+    font-size: smaller;
+}
+
+/* footer css */
+
+span{
+ font-size: medium;
+ padding: 6px;
+ text-align: center;
+}
+#footer p{
+  color: rgb(58, 57, 57);
+}
+#footer li{
+  color: rgb(58, 57, 57);
+}
+hr{
+  color: rgb(90, 88, 88);
+}
