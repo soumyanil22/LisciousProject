@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/cart.css">
+
+</head>
+
+<body>
+    <button id="openbtn" onclick="openNav()">open</button>
+    <div id="cross_sidepanel"><img
+            src="https://www.licious.in/img/rebranding/cross.svg"
+            alt="" onclick="closeNav()">
+        <div id="sidepanel">
+
+            <p id="mainheading">Order Summary</p>
+            <div id="checkforoff"></div>
+            <div id="cartdiv">
+
+                <div id="btmlinediv">
+
+                </div>
+
+            </div>
+            <h1 id="Dontmissout">Don't miss out on these Meaty Treats!</h1>
+            <div id="grid">
+                <div> <img
+                        src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/89d0e514-8d15-d79b-d40c-1fef4c3f3fc9/original/Classic-Eggs---Pack-Of-30-Hero-Shot.jpg"
+                        alt="">
+                    <h1>Classic Eggs-pack Of 30</h1>
+                    <h2>30Pieces |₹ 271</h2>
+                    <button onclick="addextra()">ADD</button>
+                </div>
+                <div><img
+                        src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/08aeacce-579c-1ceb-b24c-bcb535d99b90/original/uncooked.jpg"
+                        alt="">
+                    <h1>Afghani Murgh Seekh Kebab
+                    </h1>
+                    <h2>30Pieces |₹ 237</h2>
+                    <button onclick="addextra1()">ADD</button>
+                </div>
+                <div><img
+                        src="https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_ikuk3im2bid/11/prod_display_image/1634311441.8601--2021-10-1520:54:01--905"
+                        alt="">
+                    <h1>Lucknowi Mutton Kebab </h1>
+                    <h2>30Pieces |₹ 379</h2>
+                    <button onclick="addextra2()">ADD</button>
+                </div>
+                <div><img
+                        src="https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/2c5ae5a2-b6fe-52f6-d354-18eff779d367/original/1584770289.1812--2020-03-2111_28_09--738.jpeg"
+                        alt="">
+                    <h1>Chicken Curry Cut (Small Pcs)
+                    </h1>
+                    <h2>30Pieces |₹ 161</h2>
+                    <button onclick="addextra3()">ADD</button>
+                </div>
+            </div>
+            <div id="dashborder">
+                <div id="billdetail">
+                    <h2>BILL DETAILS</h2>
+                    <div id="Subtotal">
+                        <p>Subtotal</p>
+                        <h2 id="valied"></h2>
+                    </div>
+                    <div id="DeliveryCharge">
+                        <p>Delivery Charge</p>
+                        <h3 id="DeliveryCharge_h3"></h3>
+                    </div>
+                    <div id="Discount">
+                        <p>Discount</p>
+                        <h6 id="Discountvalue"></h6>
+                    </div>
+                    <hr>
+                    <div id="total">
+                        <p>Total</p>
+
+                        <h5 id="gettotal"></h5>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="lasttotal">
+                <div id="Total_inf">
+                    <div id="lasttotalbox1"></div>
+                    <img
+                        src="https://mpng.subpng.com/20191026/eou/transparent-description-icon-info-icon-information-icon-5db3e089744193.6580269715720695134762.jpg"
+                        alt="" onclick="ScrollToBottom()">
+                </div>
+
+                <div id="proceedtocheck" onclick="Opencheckoutslider() ,closeNav()">Proceed to Checkout</div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="up"></div> -->
+
+    <div id="aftercheckout">
+        <a href="javascript:void(0)" class="closebtn" onclick="Closecheckoutslider()">&times;</a>
+        <div id="sign_login">
+            <h1>Sign In/Sign Up</h1>
+
+            <input type="text" placeholder="Enter Mobile Number">
+            <div id="ProceedViaOTP" onclick=" Closecheckoutslider()">
+                <h4> Proceed Via OTP</h4>
+
+            </div>
+            <h2 id="headingandlink">By signing in you agree to our</h2>
+            <a href="https://www.licious.in/terms">terms and conditions</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./scripts/cart.js"></script>
