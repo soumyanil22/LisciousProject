@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg--color);
+    font-family: "Roboto", sans-serif;
+  }
+  /* :root {
+     --bg--color: mediumvioletred; 
+    --primary--color: #fff;
+    --secondary--color: #a4ebf3;
+    --gray--color: #aaaaaa;
+  } */
+  .wapper {
+    margin-top: 190px;
+    width: 300px;
+   
+    background-color: #fff;
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .wapper input {
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    height: 45px;
+    width: 100%;
+    border: 1px solid #D11243;
+    outline: none;
+    border-radius: 10px;
+  }
+  .wapper .btn1 {
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+  background-color: #aaaaaa;
+    transition: all 0.2s linear;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .btn1:hover {
+    transform: scale(1.1);
+    background:#D11243;
+  }
+  .wapper input:focus {
+    border: 1px solid #D11243;
+  }
+  .wapper input::placeholder {
+    color: black;
+  }
+  .wapper .signup-link {
+    display: block;
+    transform: translateX(120px);
+    margin-bottom: 10px;
+    /* color: var(--bg--color); */
+    color:#D11243;
+  }
+  p a{
+    color: #D11243;
+  }
+
+   .offcanvas-body{
+    background-image: url("https://www.licious.in/img/rebranding/user-login.png");
+ 
+  } 
+  img{
+    margin-top: 20px;
+    height: 60px;
+    width: 50%;
+    /* border: 1px solid blue; */
+    /* background-image: url("https://www.licious.in/img/rebranding/logo-white.png"); */
+  }
