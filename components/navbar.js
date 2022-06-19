@@ -1,3 +1,4 @@
+
 function navbar () {
     return `
     <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="licious-logo">
@@ -7,12 +8,12 @@ function navbar () {
             <p>Bangalore,Karnataka,India</p>
         </div>
         <img src="https://www.licious.in/img/rebranding/down-arrow.png" alt="down-arrow">
-        <input type="text" placeholder="Search for any delicious product">
+        <input type="text" id="search" placeholder="Search for any delicious product">
         <img src="https://www.licious.in/img/rebranding/search_icon.svg" alt="search_icon">
         <img src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="profile_icon">
-        <p>Login</p>
+        <p id="login">Login</p>
         <img src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="cart_icon">
-        <p>Cart</p>`
+        <p id="cart" onclick="myFn()">Cart</p>`
 }
 
 function product () {
@@ -23,7 +24,7 @@ function product () {
         <p>Today's Deals</p>
     </div>
 </div>
-<div class="product">
+<div class="product" id="chicken">
     <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c777a59e-f2f7-dd37-9ba0-7f385aed3eb3/original/Circle@3x.png?format=webp"
         alt="chicken">
     <div class="details">

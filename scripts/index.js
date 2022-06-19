@@ -90,3 +90,27 @@ console.log(navbar());
 
 nav.innerHTML = navbar();
 prod.innerHTML = product();
+
+let searchBar = document.getElementById('search');
+
+searchBar.addEventListener('click', redirectFn);
+
+function redirectFn() {
+    window.location.href = 'search.html';
+}
+
+let logIn = document.getElementById('login');
+
+let chicken = document.getElementById('chicken');
+
+logIn.addEventListener('click', redirectLogin);
+
+function redirectLogin () {
+    window.location.href = "login.html";
+}
+
+chicken.addEventListener('click',productPage);
+
+function productPage() {
+    window.location.href = "chicken.html";
+}

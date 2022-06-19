@@ -1,4 +1,4 @@
-import {navbar,product} from '../navbar2/navbar.js'
+import {navbar,product} from '../components/navbar.js'
 
 
 let nav = document.getElementById('navbar');

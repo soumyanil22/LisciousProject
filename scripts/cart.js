@@ -1,3 +1,6 @@
+
+
+
 var arr = JSON.parse(localStorage.getItem("cart")) || [];
 var count = JSON.parse(localStorage.getItem("cnt")) || 0;
 var total = 0;
@@ -245,4 +248,22 @@ function Closecheckoutslider() {
 
   document.querySelector("#headingandlink").style.display = "none";
   alert("Payment Successful");
+}
+
+
+let cart = document.getElementById('cart');
+
+cart.addEventListener('click',xyz);
+
+function myFn () {
+  window.location.href = 'cart.html';
+}
+
+
+let checkout = document.getElementById('proceedtocheck');
+
+checkout.addEventListener('click',checkout);
+
+function checkout() {
+  window.location.href = "payment.html";
 }
