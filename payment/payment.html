@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+     
+     #firstdiv1{
+  color:rgb(61, 58, 58);
+}
+    .searchsubmit {
+      
+      background-color: #1c87c9;
+      color: #ffffff;
+      height:30px;
+    }
+    .liciousnavbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+    top: 0;
+  width: 98%;
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  padding-top: 25px;
+   
+}
+
+ #liciousimg{
+  height: 50px;
+  width:130px;
+ }
+#searchbox{
+  display:flex;
+  height:50px;
+}
+#submit1{
+  height:35px;
+}
+  #sb{
+    width:500px;
+    height:30px;
+  }
+  #mainbody{
+    margin-top: 90px;
+    width: 95%;
+    margin-left: 40px;
+    height:1000px;
+     
+    
+    display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #paymentoptions{
+    width: 20%;
+     ;
+    height:800px;
+        }
+        #paymentoptions>div{
+            border:1px solid grey;
+            height:7%;
+            font-size: 18px;
+            width:95%; 
+            color: rgb(10, 1, 1);
+            padding-left: 9px;
+            padding-top: 10px; 
+            
+            font-family: 'Poppins', sans-serif;
+        }
+        #paymentoptions>div:hover{
+            cursor:pointer;
+            color: black;
+        }
+        #cred{
+          color: green;
+          font-size: 14px;
+        }
+        #paytm{
+          color: green;
+          font-size: 14px;
+        }
+        #paymentmain{
+          width:50%;
+           
+        }
+        #paymentmain1{
+          
+          height:auto;
+          box-shadow: rgb(43, 38, 38);
+        }
+
+        #carddetails{
+            font-family: 'Poppins',sans-serif;
+            margin:0;padding:0;
+            box-sizing:border-box;
+            outline:none;
+            border:none;
+            text-decoration: none;
+             
+    
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow:column;
+            padding-bottom: 30px;
+            width:50%;
+            height: 300px;
+            gap:100px;
+            margin-top: 485px;
+            margin-left: -630px;
+            
+        }
+         
+        #carddetails form #inputbox{
+            margin-top: 25px;
+            border-top:0px;
+  border-left: 0px;
+  border-right: 0px;
+        }
+        #carddetails form #inputbox span{
+            display:block;
+            color:rgb(26, 3, 3);
+            padding-bottom: 5px;
+            font-size: 19px;
+            
+        }
+
+        #carddetails form #inputbox input,
+        #carddetails form #inputbox select{
+            
+            width:90%;
+            padding:10px;
+            border:1px solid rgba(0,0,0,.3);
+            color:#444;
+            border-top:0px;
+  border-left: 0px;
+  border-right: 0px;
+        }
+        #carddetails form #flexbox{
+            display:flex;
+            gap:25px;
+            width:93%;
+
+        }
+        #carddetails form #flexbox #inputbox{
+            flex:1 1 150px;
+        }
+
+        
+        
+        #submitbtn1:hover{
+            letter-spacing: 2px;
+          
+        }
+
+         
+      
+       
+         #carddetails #cardcontainer #front #cardnumberbox{
+             padding:30px 0;
+             font-size: 22px;
+             color:#fff;
+
+         }
+         #submitbtn1{
+            width:30%;
+          background-color: rgb(248, 11, 102);
+        border-radius: 10px;
+            font-size:18px;
+            color:#fff;
+            cursor:pointer;
+             height:55px;
+             margin-top: 30px;
+        }
+#checkbox2{
+  margin-top: 20px;
+}
+
+        #billingmain{
+ 
+width:25%;
+height:auto;
+margin-left: 950px;
+margin-top:-1000px;
+background-color: whitesmoke;
+padding-left: 20px;
+        }
+  h3{
+  color:grey;
+}
+#payment3{
+  margin-top:15px;
+  font-size: 12px;
+  color:grey;
+  margin-left: 24px;
+}
+#payment2{
+  margin-top: 10px;
+  font-size: 18px;
+  
+}
+#paymentmain{
+  margin-left:10px;
+}
+#anchor{
+  color:red;
+  font-size: 16px;
+}
+#contact{
+  font-size: 14px;
+margin-left: 25px;
+margin-top: 5px;
+}
+#contactless{
+  color:grey;
+  border: 1px dashed grey;
+  width:300px;
+}
+#checkbox2{
+  margin-top:10px;
+}
+#couponbox{
+  border-top:0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+#coupon{
+  background-color: white;
+  height:70px;
+  width:270px;
+  
+  line-height: 30px;
+  padding-left: 30px;
+
+}
+#three{
+  display:flex;
+  
+}
+#one{
+  height:35px;
+}
+#two{
+  font-size: 20px;
+  margin-top: 10px;
+}
+li {
+    text-decoration: none !important;
+}
+ul {
+  list-style-type: none;
+}
+td{
+    font-size: smaller;
+}
+
+/* footer css */
+
+span{
+ font-size: medium;
+ padding: 6px;
+ text-align: center;
+}
+#footer p{
+  color: rgb(58, 57, 57);
+}
+#footer li{
+  color: rgb(58, 57, 57);
+}
+hr{
+  color: rgb(90, 88, 88);
+}
+ #footer{
+  margin-top:250px;
+ }
+ .row{
+  display:flex;
+ }
+ #totalamount1{
+  font-size: 16px;
+  color: grey;
+ }
+ #totalamount2{
+  font-size: 16px;
+  color: grey;
+ }
+ #totalamount3{
+  font-size: 16px;
+  color: grey;
+ }
+
+
+
+ 
+#navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 170px;
+    background-color: white;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#navbar> :nth-child(2) {
+    margin-left: 60px;
+}
+
+#navbar>div {
+    width: 130px;
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsiss;
+    overflow: hidden;
+    line-height: 0.5;
+}
+
+#navbar > div > h4 {
+    font-size: 12px;
+    color: rgb(195, 189, 189);
+    font-weight: 500;
+}
+
+#navbar > div > *{
+    margin-left: 3px;
+}
+
+#navbar> :nth-child(4) {
+    height: 8px;
+    width: 10px;
+    margin-top: 18px;
+    margin-left: 8px;
+}
+
+#navbar> :nth-child(5) {
+    box-sizing: border-box;
+    margin-left: 50px;
+    height: 38px;
+    width: 500px;
+    border: 1px solid rgb(209, 205, 205);
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: #F8F8F8;
+}
+
+::placeholder {
+    color: rgb(204, 196, 196);
+}
+
+#navbar> :nth-child(6) {
+    position: relative;
+    left: -45px;
+}
+
+#navbar> :nth-child(7) {
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#navbar> :nth-child(8) {
+    margin: 3px 100px 0 10px;
+}
+
+#navbar> :last-child {
+    margin: 2px 0 0 10px;
+}
+
+    </style>
+</head>
+<body>
+
+
+  <div id="navbar">
+    <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="licious-logo">
+    <img src="https://www.licious.in/img/rebranding/location_icon.svg" alt="location_icon">
+    <div>
+        <h4>Bangaluru</h4>
+        <p>Bangalore,Karnataka,India</p>
+    </div>
+    <img src="https://www.licious.in/img/rebranding/down-arrow.png" alt="down-arrow">
+    <input type="text" placeholder="Search for any delicious product">
+    <img src="https://www.licious.in/img/rebranding/search_icon.svg" alt="search_icon">
+    <img src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="profile_icon">
+    <p>Login</p>
+    <img src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="cart_icon">
+    <p>Cart</p>
+    </div>
+
+
+
+
+    
+      
+       <div id="mainbody">
+        
+        <div id="paymentoptions">
+          
+            <div id="firstdiv1">Saved Payments</div>
+            <div>Paytm
+              <div id="paytm">
+                <img src="https://www.licious.in/img/rebranding/offer.svg"> 
+                Offers available
+              </div>
+            </div>
+            <div>Lazypay</div>
+            <div>Amazon Pay</div>
+            <div>Pay using UPI</div>
+            <div>Credit / Debit Cards</div>
+            <div>Cred pay
+              <div id="cred">
+                <img src="https://www.licious.in/img/rebranding/offer.svg">
+                Offers available
+              </div>
+            </div>
+            <div>Sodexo Food Cards</div>
+            <div>Netbanking</div>
+            <div>Other wallets</div>
+            <div>Cash on Delivery</div>
+            <div>Pay Online on Delivery</div>  
+             
+        </div>
+
+        <div id="paymentmain">
+          <div id="paymentmain1">
+            <h1>New Card</h1>
+            <div id="payment2">
+              <img id="image1" src="https://www.licious.in/img/rebranding/offer.svg">
+              Paytm Wallet</div>
+            <div id="payment3">Upto ₹500 cashback on minimum order value ₹399 on using Paytm Wallet. Minimum assured cashback ₹25. Valid twice per user per month. TnCs Apply.</p>
+          </div>
+          </div>
+          <hr>
+          <div id="paymentmain1">
+            <div id="payment2">
+              <img id="image1" src="https://www.licious.in/img/rebranding/offer.svg">
+              25%off | Slice Cards</div>
+            <div id="payment3">Get 25% instant discount on Slice Cards. Minimum purchase Rs.600. Maximum Discount Rs.200. Valid twice per user per month. Discount is shown on the bank page.</p>
+              </div>
+            </div>
+            <hr>
+
+            <div id="paymentmain1">
+              <div id="payment2">
+                <img id="image1" src="https://www.licious.in/img/rebranding/offer.svg">
+                15% off | ICICI bank Credit card.</div>
+              <div id="payment3">Get 15% instant discount on ICICI Bank Credit Cards. Minimum purchase: Rs. 800. Max Discount: Rs.200. Valid only on Saturdays and Sundays. Valid two times per card per month. Discounted amount is shown on the bank page</p>
+                </div>
+              </div>
+              <hr>
+          
+
+              <div id="paymentmain1">
+                <div id="payment2">
+                  <img id="image1" src="https://www.licious.in/img/rebranding/offer.svg">
+                  Simpl pay</div>
+                <div id="payment3">Pay using SIMPL pay and get 10% cashback upto Rs.150. T&Cs apply.</p>
+                  </div>
+                </div>
+                <hr>
+
+                <div id="paymentmain1">
+                  <div id="payment2">
+                    <img id="image1" src="https://www.licious.in/img/rebranding/offer.svg">
+                    CRED pay</div>
+                  <div id="payment3">Pay using CRED pay and get cashback upto Rs.100. T&Cs apply.</p>
+                    </div>
+                  </div>
+                  <hr>
+        </div>
+
+
+          
+        <div id="carddetails">
+          <div id="cardcontainer">
+              <div id="front">
+                    
+                  <div id="flexbox">
+                      <div id="box">
+                          <span></span>
+                          <div id="cardholder"></div>
+                          <div id="box">
+                              <div id="expiration">
+                                   
+                                   
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+               
+          </div>
+          <form>
+              <div id="inputbox">
+                  <input id="cardnumberinput" type="text" maxlength="16" placeholder="Enter card no.">
+
+              </div>
+              
+              <div id="flexbox">
+              <div id="inputbox">
+                   
+                <input id="cardnumberinput" type="text" maxlength="2" placeholder="MM">
+                  
+              </div>
+         
+
+          <div id="inputbox">
+            <input id="cardnumberinput" type="text" maxlength="4" placeholder="YYYY">    
+          </div>
+          <div id="inputbox">
+               
+              <input type="text" maxlength="4" placeholder="Enter CVV">
+
+          </div>
+            
+        </div>
+        <div id="inputbox">
+           
+          <input id="cardholder" type="text" maxlength="16" placeholder="Name on card.">
+        
+      </div>
+      <div id="checkbox2">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      <label class="checkbox1"> Securely save card for future use
+       
+      </label>
+    </div>
+      
+      <input type="submit" value="Pay Amount" id="submitbtn1" onclick="myFunction()">
+       
+          </form>
+      </div>
+</div>
+</div>
+
+
+
+
+
+
+        
+       </div>
+       <div id="billingmain">
+        <div id="bill1">
+          <h1>Choose Address <a id="anchor" href="">Change</a></h1>
+          <h3>House No 640, sec 8, Urban Estate</h3>
+        </div>
+        <div id="bill2">
+          <h1>Delivery Summary <a id="anchor" href="">Edit</a></h1>
+          <h3>1 Item will be delivered in 1 shipment</h3>
+          <div id="contactless">
+            <div id="checkbox2">
+              <input type="checkbox" checked="checked">
+              
+            <label class="checkbox1">Contactless Services  &emsp;&ensp; &emsp;&ensp; <a id="anchor" href="">Details</a>
+             
+            </label>
+          </div>
+             
+            <div id="contact">Essential for apertments that don't allow doorstep delivery. Additional charges of Rs.10 apply</div>
+          </div>
+        </div>
+        <div id="bill3">
+          <h1>Payment Methods</h1>
+          <h3>You have no saved cards</h3>
+        <div id="coupon">
+          <div id="coupon1">
+            Have a coupon/referral code? Apply
+          </div>
+          <div id="coupon2">
+            <input id ="couponbox" placeholder="Type your code here"/><button>Apply</button>
+          </div>
+        </div>
+        </div>
+        <div id="bill4">
+          <h1>Bill Details</h1>
+          <div id="charges">
+            <p id="totalamount1">Subtotal  &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp;  &emsp;&ensp; &emsp;&ensp;</p>
+            <p id="totalamount2">Delivery Charge  &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; 39</p>
+           <p id="totalamount2">Contactless Service Charges &ensp;&ensp;&ensp;&ensp;  10</p>
+           <p id="totalamount2">Discount &emsp;&ensp; &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&ensp;&emsp;&ensp; 0</p>
+           <p id="totalamount2">Licious Wallet &emsp;&ensp; &emsp;&ensp; &emsp;&emsp; &emsp;&ensp;&emsp;0</p>
+           <hr>
+           <p id="totalamount3">Total &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+                </div>
+              </div>
+
+
+
+
+              <div id="footer" class="container-fluid">
+                <hr>
+                <div class="row">
+                  <div class="col-md-2">
+                    <ul class="list">
+                      <h6>USEFUL LINK</h6>
+                      <li class="no-style">why Licious ?</li>
+                      <li class="no-style">Refer & Earn</li>
+                      <li class="no-style">Licious Cash & Cash+</li>
+                      <li class="no-style">Careers</li>
+                      <li class="no-style">BLOG</li>
+                      <li class="no-style">Campaign</li>
+                      <li class="no-style">Buy Bounty Guidelines</li>
+                      <li class="no-style">About Us</li>
+                      <li class="no-style">FSSC 22000 Certification</li>
+                      <li class="no-style">FSSAi licenses</li>
+                      <li class="no-style">Sitemap</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>EXPERIENCE LICIOUS APP ON MOBILE</h6>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img
+                          src="https://www.licious.in/img/rebranding/app-store-new.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <img
+                          src="https://www.licious.in/img/rebranding/play-store-new.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <hr class="vr fs-7"> -->
+                  <div class="col-md-3">
+                    <ul>
+                      <h6>CONTACT US</h6>
+                      <li class="no-style">Call: 1800-4190-786</li>
+                      <li class="no-style">Talktous@licious.com</li>
+                      <h6>REGISTERED OFFICE ADDRESS</h6>
+                      <li class="no-style">House of licious, Zed pearl, No12,</li>
+                      <li class="no-style">Domlur Layout</li>
+                      <li class="no-style">Banglore, karnataka - 560071</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-2">
+                    <ul>
+                      <li class="no-style">T&C</li>
+                      <li class="no-style">FAQ</li>
+                      <li class="no-style">Privacy policy</li>
+                      <h6>HAVE SECURITY CONCERN</h6>
+                      <li class="no-style">Mail us to:</li>
+                      <li class="no-style">security@licious.com</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-2">
+                    <img
+                      id="visacard"
+                      class="img-thumbnail"
+                      src="https://www.licious.in/img/rebranding/3-dsecure.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                <div class="container">
+                  <div class="container">
+                    <div class="container">
+                      <h6>CITIES WE SERVE</h6>
+                      <p>
+                        <span>Bangaluru</span> <span>|</span>
+                        <span>NCR</span> <span>|</span>
+                        <span>Hyderabad</span> <span>|</span>
+                        <span>Chandigarh</span> <span>|</span>
+                        <span>Panckula</span> <span>|</span>
+                        <span>Mohali</span> <span>|</span>
+                        <span>Mumbai</span> <span>|</span>
+                        <span>Pune</span> <span>|</span>
+                        <span>Chennai</span> <span>|</span>
+                        <span>Coimbatore</span> <span>|</span>
+                        <span>Jaipur</span> <span>|</span>
+                        <span>Cochin</span> <span>|</span>
+                        <span>Vijaywada</span> <span>|</span>
+                        <span>Vishakhapatnam</span> <span>|</span>
+                        <span>Pondicherry</span> <span>|</span>
+                        <span>Kolkata</span> <span>|</span>
+                        <span>Nagpur</span> <span>|</span>
+                        <span>Bhilai </span> <span>|</span>
+                        <span>Trisssur</span> <span>|</span>
+                        <span>Lucknow</span> <span>|</span>
+                        <span>Kanpur</span> <span>|</span>
+                        <span>Agra</span> <span>|</span>
+                        <span>Trichy </span> <span>|</span>
+                        <span>Nashik</span> <span>|</span>
+                        <span>Palakkad</span> <span>|</span>
+                      </p>
+                    </div>
+                      
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <br class="row">
+                <br>
+                <div class="container" style="text-align: center;">
+                  <h5>
+                    <img data-lazy="/img/rebranding/copyright2.png" alt="" src="/img/rebranding/copyright2.png"><span>2022</span> Delightful Gourmet Pvt Ltd. All Rights Reserved.
+                  </h5>
+                  <br>
+                 <div class="container">
+                  <div class="container">
+                    <div class="container">
+                      <p>
+                        Licious is your one-stop fresh meat delivery shop. In here, you get nothing but
+                        the freshest meat &amp; seafood, delivered straight to your doorstep. Now you can buy
+                        meat online anytime at your convenience. Indulge in our diverse selection: Chicken,
+                        Mutton, Seafood (Fish, Prawns, Crabs), Marinades &amp; Cold Cuts. All our products are 
+                        completely natural and healthy. Once you've experienced Licious, you'll never
+                        go back to the old way of buying meat and seafood.
+                      </p>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </br>
+            </br>
+              </div>
+              </div>
+
+</body>
+</html>
+ <script>
+    var cartamount = JSON.parse(localStorage.getItem("cart"));
+    document.querySelector("#totalamount1").innerHTML += cartamount;
+    document.querySelector("#totalamount3").innerHTML += cartamount;
+
+
+   
+   function myFunction(){
+        event.preventDefault();
+        window.location.href="success.html";
+    };
+
+
+ </script>
+
+  
+ 
