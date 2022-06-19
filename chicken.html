@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/chicken.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>hello world</h1>
+    <div id="navbar">
+
+    </div>
+
+    <div id="products">
+
+    </div>
+    <div class="container">
+      <!-- nav breadcrumb -->
+      <nav
+        style="
+          --bs-breadcrumb-divider: url(
+            &#34;data:image/svg + xml,
+            %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+          );
+        "
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#" style="text-decoration: none; color: #555">Home</a>
+          </li>
+          <li
+            class="breadcrumb-item active"
+            aria-current="page"
+            style="color: #d11243"
+          >
+            Chicken
+          </li>
+        </ol>
+      </nav>
+
+      <!-- nav breadcrumb -->
+
+      <!-- nav cont -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Chicken</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link popovr"
+                  data-bs-toggle="popover"
+                  data-bs-placement="bottom"
+                  data-bs-trigger="hover focus"
+                  data-bs-content="Working with farmers and partners, picking breed raised humanely on controlled farms."
+                  href="#"
+                >
+                  <img
+                    src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_58e78b9c4b2e0"
+                    alt=""
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  <span class="">Farm-raised superior breed</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="vr"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link popovre"
+                  data-bs-toggle="popover"
+                  data-bs-placement="bottom"
+                  data-bs-trigger="hover focus"
+                  data-bs-content="No Added Chemical , Antibiotic residue free."
+                  href="#"
+                >
+                  <img
+                    src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_58e78bdf673b7"
+                    alt=""
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  <span class=""
+                    >No Added Chemical , Antibiotic residue free</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navcont -->
+
+      <!-- select -->
+      <div class="categories">
+        <button id="filter" onclick="addItems()">Clear Filter</button>
+        <select id="ctype" onclick="ctype()">
+          <option value="">Chicken Type</option>
+          <option value="boiler"><button>Broiler</button></option>
+          <option value="country"><button>Country</button></option>
+          <option value="kadaknath"><button>Kadaknath</button></option>
+        </select>
+        <select id="btype" onclick="btype() ">
+          <option value="">Bone Type</option>
+          <option value="bone-in"><button>Bone-in</button></option>
+          <option value="boneless"><button>Boneless</button></option>
+        </select>
+        <select id="cuttype" onclick="cuttype()">
+          <option value="">Cut Type</option>
+          <option value="whole-cut"><button>Whole & Curry Cut</button></option>
+          <option value="wings"><button>Wings & Offals</button></option>
+          <option value="thigh"><button>Thigh & Drumstick</button></option>
+          <option value="breast">Breast</option>
+          <option value="cubes"><button>Cubes & Strips</button></option>
+          <option value="mince"><button>Mince</button></option>
+          <option value="leg"><button>Whole Leg & Lolipop</button></option>
+        </select>
+        <select id="bestfor" onclick="bestfor()">
+          <option value="">Best suited For</option>
+          <option value="grill"><button>Grill</button></option>
+          <option value="deepfry"><button>Deep Fry</button></option>
+          <option value="roast"><button>Roast</button></option>
+          <option value="stuffing"><button>Stuffing</button></option>
+          <option value="curry"><button>Curry</button></option>
+          <option value="biryani"><button>Biryani</button></option>
+          <option value="bake"><button>Bake</button></option>
+          <option value="panfry"><button>Pan Fry</button></option>
+        </select>
+        <select name="" id="packsz" onclick="packsz()">
+          <option value="">Pack Size</option>
+          <option value="large">Large Pack</option>
+          <option value="">Regular Pack</option>
+        </select>
+      </div>
+      <!-- select -->
+      <br />
+
+      <div id="cproducts"></div>
+    </div>
+
+    <!--product page footer -->
+    <div class="container-fluid">
+      <hr />
+      <div class="container">
+        <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col col-md-8">
+                <div class="category-content">
+                  <div class="category-title" style="font-weight: bold">
+                    About Licious Chicken
+                  </div>
+                  <div class="category-details-footer description">
+                    <div class="section-desc">
+                      When it comes to food, what is more comforting than a
+                      home-cooked chicken meal? Chicken recipes are always a
+                      favourite in households, as they are an ideal meal for any
+                      day of the week. A common type of poultry, this ‘white
+                      meat’ is a supper staple and can be used to rustle up
+                      quite a few delicious recipes. From adding flavour as a
+                      side dish, to being the heart of your elaborate
+                      home-cooked feast, chicken can be prepared in many ways.
+                      You can enjoy it baked, roasted; or turn it into a
+                      biryani, korma, butter masala, pasta, soup and more.<br />
+                      Chicken provides a good amount of nutrition and is also
+                      affordable, making it an ideal choice among food
+                      enthusiasts, and households. This white meat is known to
+                      support good health by providing high levels of lean
+                      protein, carbohydrates and fat.<br />
+                      At Licious, we strive to bring you the best cuts of
+                      chicken. We believe that food is best enjoyed when it's
+                      fresh, which is why we are so particular about what we put
+                      on your plate. The poultry from Licious is pasture-raised
+                      and carefully selected by experts, before it makes its way
+                      to your kitchen. Try our hygienic cuts of chicken legs,
+                      chicken breast, chicken curry pieces and more, to
+                      complement every dish of your choice. <br />
+                      Our wide range of chicken products include:
+                    </div>
+                    <ul class="list">
+                      <li class="no-style">
+                        <b>Chicken Curry Cut&nbsp;(Small)</b>&nbsp;– Chicken
+                        Curry Cut pieces are specially selected bone-in and
+                        boneless pieces from different parts of the chicken. A
+                        perfect mix of white and dark meat, the Chicken Curry
+                        Cut package includes different cuts from half of the
+                        chicken with the leg, wing without tip and a quarter of
+                        the breast with backbone. These small bite-sized pieces
+                        are ideal for your delicious gravy dishes, such as
+                        curries or kormas.
+                      </li>
+                      <li class="no-style">
+                        <b>Chicken Breast </b>&nbsp;– A pure meat indulgence,
+                        the Chicken Breast is one of the meatier cuts of a
+                        chicken. The high meat-to-bone ratio makes it extremely
+                        versatile for use in a variety of dishes. The portion is
+                        skinless and has a supple texture. An ideal choice for a
+                        lean protein diet, the tender flesh can be added as
+                        small chunks to your pasta, butter chicken masala or
+                        used as-is for a juicy chicken grill or stuffed bake.
+                      </li>
+                      <li class="no-style">
+                        <b>Chicken (Whole with Skin)</b>&nbsp;– A Whole Chicken
+                        with skin retains its juiciness, which effectively
+                        enhances its flavour. A centrepiece for any feast, the
+                        Whole Chicken from Licious is gutted and cleaned, is
+                        uncut and prepped well to be cooked when it reaches you.
+                        It is perfect for dishing out a delicious stuffed
+                        chicken meal that lets you choose your favourite pieces.
+                      </li>
+                      <li class="no-style">
+                        <b>Chicken Leg (Whole) with Thigh</b>&nbsp;– The Whole
+                        Chicken Leg with Thigh from Licious includes both the
+                        drumstick and the thigh. A cut that comprises of dark
+                        meat, the Whole Chicken Leg is rich in flavour and has a
+                        moist texture. Perfect for slow-cooking, this portion of
+                        chicken is best used to prepare spiced chicken, chicken
+                        roast, chicken kepsa rice, Mughlai chicken masala or the
+                        classic tandoori chicken.
+                      </li>
+                      <li class="no-style">
+                        <b>Chicken Lollipop</b>&nbsp;– No meat feast is complete
+                        without Chicken Lollipop, as it is an absolute favourite
+                        among chicken lovers. These 'Frenched' or trimmed
+                        chicken wings are immensely flavourful owing to the
+                        inclusion of meat, fat and the bone. After cutting loose
+                        from the wing bone, the meat is rolled to one end to
+                        create a drumstick, to provide a clean bone for a
+                        handle. The tender meat is best enjoyed fried or grilled
+                        with a generous spread of spices.
+                      </li>
+                      <li class="no-style">
+                        <b>Chicken Mince (Keema)</b>&nbsp;– Chicken Mince or
+                        Keema is Chicken Breast Fillets ground to perfection.
+                        The juicy and smooth lean mince is an ideal choice for a
+                        variety of dishes such as Indian spiced keema, kebabs,
+                        spaghetti salad, chicken herbed patties and more.
+                      </li>
+                      <li class="no-style">
+                        <b>Chicken Drumstick</b>&nbsp;– Cut from the lower leg,
+                        the Drumstick is one of the meatier cuts of a chicken.
+                        The leg bone enhances its flavour. Succulent and tender
+                        in every bite, the Chicken Drumstick is ideal for
+                        grilled and fried dishes as a starter. Chicken
+                        Drumsticks are also perfect for cooking curries, biryani
+                        or a healthy light grill.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="category-details-footer health-benefits">
+                    <div class="section-title" style="font-weight: bold">
+                      Health Benefits of chicken
+                    </div>
+                    <div class="section-desc">
+                      Chicken offers scientifically proven nutritional benefits
+                      that make it a healthy addition to your daily meals. The
+                      benefits include:
+                    </div>
+                    <ul class="list">
+                      <li>
+                        High-protein density that aids in building and
+                        maintaining lean muscle mass
+                      </li>
+                      <li>
+                        Natural source of B vitamins that facilitate enzymatic
+                        reactions in the body
+                      </li>
+                      <li>
+                        A source of selenium that is believed to reduce
+                        inflammation and body oxidative stress
+                      </li>
+                      <li>
+                        Contains minerals like phosphorus and calcium that
+                        maintain bone health
+                      </li>
+                      <li>
+                        A source of vitamin B6 that aids in preventing heart
+                        attack
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="category-details-footer top-recipes">
+                    <div class="section-desc">
+                      <b>Top Recipes </b> – The top recipes that you can create
+                      using Licious Chicken include:
+                    </div>
+                    <ul class="list">
+                      <li>Chicken Biryani</li>
+                      <li>Tandoori Chicken</li>
+                      <li>Butter Chicken</li>
+                      <li>Aromatic Chicken with Rice</li>
+                      <li>Badiyan Murgi</li>
+                      <li>Chicken Kiev</li>
+                      <li>Chicken Florentine</li>
+                      <li>Chicken Vartha Curry</li>
+                      <li>Chicken Stew</li>
+                      <li>Chicken Tikka Masala</li>
+                      <li>Chicken and Oats Soup</li>
+                    </ul>
+                  </div>
+                  <div class="category-details-footer category-desc">
+                    <div class="section-title" style="font-weight: bold">
+                      Things you should know about Licious Chicken
+                    </div>
+                    <ul class="list">
+                      <li>Farm-Raised Superior Breed</li>
+                      <li>Natural Non-GMO Feed</li>
+                      <li>Steroid &amp; Hormone Free</li>
+                      <li>Super Tender</li>
+                      <li>Delivered Fresh Everyday</li>
+                      <li>Undergoes Stringent Quality Checks</li>
+                      <li>Fresh Produce for Extraordinary Cooking</li>
+                    </ul>
+                  </div>
+                  <div class="category-details-footer category-faqs">
+                    <div class="section-title" style="font-weight: bold">
+                      FAQs
+                    </div>
+                    <ul class="list">
+                      <li class="no-style">
+                        <div class="section-title" style="font-weight: bold">
+                          How is Licious chicken sourced?&nbsp;
+                        </div>
+                        <div class="section-desc">
+                          Licious chicken is a premium produce that ensures you
+                          enjoy quality and fresh meat. We work with local
+                          farmers and the chicken is raised in a natural
+                          environment on controlled farms.
+                        </div>
+                      </li>
+
+                      <li class="no-style">
+                        <div class="section-title" style="font-weight: bold">
+                          Why should I choose Licious chicken?
+                        </div>
+                        <div class="section-desc">
+                          We strive to bring you only the best! We are extremely
+                          meticulous about the meat we put on your plate. For
+                          this reason, our chicken produce is handpicked. We
+                          believe that chicken tastes best when fresh and it
+                          truly uplifts the taste of your meals.&nbsp;Moreover,
+                          chicken from Licious is free from antibiotic residue
+                          and artificially injected hormones.
+                        </div>
+                      </li>
+
+                      <li class="no-style">
+                        <div class="section-title" style="font-weight: bold">
+                          How long can I store chicken in the refrigerator?
+                        </div>
+                        <div class="section-desc">
+                          Chicken is best consumed fresh or on the day of its
+                          delivery, as it adds the best flavours to your dish.
+                          We do not recommend using frozen chicken, as it
+                          affects the taste, texture and nutritional properties
+                          of the meat. However, the meat, whether whole or cut,
+                          can be stored in a refrigerator for 2 to 3 days.
+                        </div>
+                      </li>
+                      <li class="no-style">
+                        <div class="section-title" style="font-weight: bold">
+                          At what temperature must chicken be stored?
+                        </div>
+                        <div class="section-desc">
+                          The chicken must be stored in a refrigerator that is
+                          set at a temperature between 0 to 5 degrees. This is
+                          the same temperature that we maintain for the meat –
+                          from the time of procurement to the point of delivery.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Product</th>
+                      <th scope="col">Price*</th>
+                      <th scope="col">Net Wt</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Chicken Thigh - (Skinless)</td>
+                      <td>Rs. 230</td>
+                      <td>@450 gms</td>
+                    </tr>
+                    <tr>
+                      <td>Chicken Thigh (Boneless)</td>
+                      <td>Rs. 245</td>
+                      <td>450 gms</td>
+                    </tr>
+                    <tr>
+                      <td>Chicken Boneless - Tikka Cut</td>
+                      <td></td>
+                      <td>Rs. 225</td>
+                    </tr>
+                    <tr>
+                      <td>Chicken Boneless - Tikka Cut</td>
+                      <td></td>
+                      <td>Rs. 225</td>
+                    </tr>
+                    <tr>
+                      <td>Chicken Boneless - Tikka Cut</td>
+                      <td></td>
+                      <td>Rs. 225</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!--product page footer -->
+
+
+    <!-- main footer -->
+
+    <div id="footer" class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="list">
+            <h6>USEFUL LINK</h6>
+            <li class="no-style">why Licious ?</li>
+            <li class="no-style">Refer & Earn</li>
+            <li class="no-style">Licious Cash & Cash+</li>
+            <li class="no-style">Careers</li>
+            <li class="no-style">BLOG</li>
+            <li class="no-style">Campaign</li>
+            <li class="no-style">Buy Bounty Guidelines</li>
+            <li class="no-style">About Us</li>
+            <li class="no-style">FSSC 22000 Certification</li>
+            <li class="no-style">FSSAi licenses</li>
+            <li class="no-style">Sitemap</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>EXPERIENCE LICIOUS APP ON MOBILE</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://www.licious.in/img/rebranding/app-store-new.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6">
+              <img
+                src="https://www.licious.in/img/rebranding/play-store-new.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- <hr class="vr fs-7"> -->
+        <div class="col-md-3">
+          <ul>
+            <h6>CONTACT US</h6>
+            <li class="no-style">Call: 1800-4190-786</li>
+            <li class="no-style">Talktous@licious.com</li>
+            <h6>REGISTERED OFFICE ADDRESS</h6>
+            <li class="no-style">House of licious, Zed pearl, No12,</li>
+            <li class="no-style">Domlur Layout</li>
+            <li class="no-style">Banglore, karnataka - 560071</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li class="no-style">T&C</li>
+            <li class="no-style">FAQ</li>
+            <li class="no-style">Privacy policy</li>
+            <h6>HAVE SECURITY CONCERN</h6>
+            <li class="no-style">Mail us to:</li>
+            <li class="no-style">security@licious.com</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <img
+            id="visacard"
+            class="img-thumbnail"
+            src="https://www.licious.in/img/rebranding/3-dsecure.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+      <div class="container">
+        <div class="container">
+          <div class="container">
+            <h6>CITIES WE SERVE</h6>
+            <p>
+              <span>Bangaluru</span> <span>|</span>
+              <span>NCR</span> <span>|</span>
+              <span>Hyderabad</span> <span>|</span>
+              <span>Chandigarh</span> <span>|</span>
+              <span>Panckula</span> <span>|</span>
+              <span>Mohali</span> <span>|</span>
+              <span>Mumbai</span> <span>|</span>
+              <span>Pune</span> <span>|</span>
+              <span>Chennai</span> <span>|</span>
+              <span>Coimbatore</span> <span>|</span>
+              <span>Jaipur</span> <span>|</span>
+              <span>Cochin</span> <span>|</span>
+              <span>Vijaywada</span> <span>|</span>
+              <span>Vishakhapatnam</span> <span>|</span>
+              <span>Pondicherry</span> <span>|</span>
+              <span>Kolkata</span> <span>|</span>
+              <span>Nagpur</span> <span>|</span>
+              <span>Bhilai </span> <span>|</span>
+              <span>Trisssur</span> <span>|</span>
+              <span>Lucknow</span> <span>|</span>
+              <span>Kanpur</span> <span>|</span>
+              <span>Agra</span> <span>|</span>
+              <span>Trichy </span> <span>|</span>
+              <span>Nashik</span> <span>|</span>
+              <span>Palakkad</span> <span>|</span>
+            </p>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br class="row">
+      <br>
+      <div class="container" style="text-align: center;">
+        <h5>
+          <img data-lazy="/img/rebranding/copyright2.png" alt="" src="/img/rebranding/copyright2.png"><span>2022</span> Delightful Gourmet Pvt Ltd. All Rights Reserved.
+        </h5>
+        <br>
+       <div class="container">
+        <div class="container">
+          <div class="container">
+            <p>
+              Licious is your one-stop fresh meat delivery shop. In here, you get nothing but
+              the freshest meat &amp; seafood, delivered straight to your doorstep. Now you can buy
+              meat online anytime at your convenience. Indulge in our diverse selection: Chicken,
+              Mutton, Seafood (Fish, Prawns, Crabs), Marinades &amp; Cold Cuts. All our products are 
+              completely natural and healthy. Once you've experienced Licious, you'll never
+              go back to the old way of buying meat and seafood.
+            </p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </br>
+  </br>
+    </div>
+    </div>
+
+    <!-- main footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script type="module" src="../be/chickendata.js"></script>
+</html>
