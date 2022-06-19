@@ -1,0 +1,204 @@
+/* navar css start */
+#navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 170px;
+  background-color: white;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar> :nth-child(2) {
+  margin-left: 60px;
+}
+
+#navbar>div {
+  width: 130px;
+  display: block;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsiss;
+  overflow: hidden;
+  line-height: 0.5;
+}
+
+#navbar > div > h4 {
+  font-size: 12px;
+  color: rgb(195, 189, 189);
+  font-weight: 500;
+}
+
+#navbar > div > *{
+  margin-left: 3px;
+}
+
+#navbar> :nth-child(4) {
+  height: 8px;
+  width: 10px;
+  margin-top: 18px;
+  margin-left: 8px;
+}
+
+#navbar> :nth-child(5) {
+  box-sizing: border-box;
+  margin-left: 50px;
+  height: 38px;
+  width: 500px;
+  border: 1px solid rgb(209, 205, 205);
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+  background-color: #F8F8F8;
+}
+
+::placeholder {
+  color: rgb(204, 196, 196);
+}
+
+#navbar> :nth-child(6) {
+  position: relative;
+  left: -45px;
+}
+
+#navbar> :nth-child(7) {
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#navbar> :nth-child(8) {
+  margin: 3px 100px 0 10px;
+}
+
+#navbar> :last-child {
+  margin: 2px 0 0 10px;
+}
+
+.header {
+  color: #4A4A4A;
+  font-size: 22px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 15px 0 0 30px;
+}
+
+#section {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#section>div {
+  width: 120px;
+}
+
+#section>div>img {
+  width: 100%;
+}
+
+#products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+#products > .product:hover {
+  cursor: pointer;
+  color: #D11243;
+}
+
+#products>.product {
+  width: 7%;
+  padding-right: 15px;
+}
+
+#products > .product p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  text-align: center;
+}
+
+.product img {
+  
+  width: 100%;
+}
+
+/* navar css end */
+
+
+#cproducts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#filter {
+  width: 10%;
+  height: 30px;
+  background-color: transparent;
+  border-color: rgb(238, 228, 228);
+  border: none;
+  border: 1px solid rgb(238, 228, 228);
+}
+.categories select {
+  /* width: 10%; */
+  height: 30px;
+  background-color: transparent;
+  /* border-color: rgb(238, 228, 228); */
+  margin-left: 10px;
+  width: fit-content;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow-x: auto;
+}
+.popovr span:hover {
+  background-color: rgb(160, 158, 158);
+}
+.popovre span:hover {
+  background-color: rgb(160, 158, 158);
+}
+.popover {
+    background: rgb(160, 158, 158);
+} 
+.category-details-footer{
+    font-size: smaller;
+}
+li {
+    text-decoration: none !important;
+}
+ul {
+  list-style-type: none;
+}
+td{
+    font-size: smaller;
+}
+
+/* footer css */
+
+span{
+ font-size: medium;
+ padding: 6px;
+ text-align: center;
+}
+#footer p{
+  color: rgb(58, 57, 57);
+}
+#footer li{
+  color: rgb(58, 57, 57);
+}
+hr{
+  color: rgb(90, 88, 88);
+}
